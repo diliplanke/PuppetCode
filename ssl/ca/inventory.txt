@@ -1,3 +1,0 @@
-0x0001 2017-03-01T08:40:47UTC 2022-03-01T08:40:47UTC /CN=Puppet CA generated on dilz-in3.mylabserver.com at 2017-01-12 23:45:32 +0000
-0x0002 2017-03-01T08:40:48UTC 2022-03-01T08:40:48UTC /CN=pe-internal-mcollective-servers
-0x0003 2017-03-01T08:40:55UTC 2022-03-01T08:40:55UTC /CN=pe-internal-peadmin-mcollective-client
