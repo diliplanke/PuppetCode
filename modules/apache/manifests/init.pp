@@ -25,10 +25,10 @@ include apache::package
 
 	}
 
-        apache::vhost { "dilz-in6b":
+        apache::vhost { "dilz-in3b":
                 port          => 80,
-                document_root => "${document_root}/dilz-in6b",
-                servername    => "dilz-in6b.mylabserver.com",
+                document_root => "${document_root}/dilz-in3b",
+                servername    => "dilz-in3b.mylabserver.com",
                 vhost_dir     => $vhost_dir,
 
         }

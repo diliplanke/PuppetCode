@@ -36,17 +36,27 @@ File { backup => 'main' }
 # will be included in every node's catalog, *in addition* to any classes
 # specified in the console for that node.
 $topscope = "Topscope from site.pp"
+#$console_test = "from site.pp"
+$key3 = "site.pp and is topscope"
+
 node default {
   # This is where you can declare classes for all nodes.
   # Example:
   #   class { 'my_class': }
 }
 node "dilz-in3.mylabserver.com" {
-	include pe_repo::platform::ubuntu_1404_amd64
-	include roles::webserver
-	include hierademo
+$key3 = "site.pp and is nodescope"
+#        $key2 = "site.pp and nodescope"
+	include consoledemo2
+#	include pe_repo::platform::ubuntu_1404_amd64
+#	include roles::webserver
+#	include hierademo
 }
 
+node "dilz-in6.mylabserver.com" {
+	include practice 
+	include practice::mount
+}
 node /^dilz-in\d{1}.mylabserver.com$/ {
 	$nodescope = "Nodescope from site.pp"
 	include roles::webserver 
